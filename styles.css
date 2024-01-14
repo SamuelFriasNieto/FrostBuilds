@@ -77,6 +77,7 @@ main {
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
     background-color: rgba(13, 13, 39, 0.904);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.253);
 }
 
 main nav {
@@ -102,25 +103,43 @@ main h2 {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    margin-left: .5rem;
     gap: 1rem;
 }
 
-.build {
-    position: absolute;
-    right: 5rem;
-    padding: 1rem;
+.mh-enlaces a {
+    transition: 250ms ease;
+}
 
+.mh-enlaces a:hover {
+    margin-left: .7rem;
+    color: rgb(5, 236, 236);
+}
+
+.contenido-principal {
+    width: 75%;
+    position: absolute;
+    right: 0;
 }
 
 .build h3 {
     font-size: 1rem;
 }
 
-.build:hover {
-    transform: scale(1.07);
-}
 
 .build img {
-    width: 75%;
+    margin: 0 auto;
+    display: block;
+    width: 80%;
 }
+
+.monsters {
+    margin-top: 2rem;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
